@@ -9,3 +9,16 @@
 .nav-link {
 	
 }
+
+.banner {
+	background-color: #000;
+	color: #fff;
+	padding: 30px 0;
+}
+
+.nav-filter {
+	.nav-link {
+		border: 1px solid #000;
+		border-radius: 0;
+	}
+}
