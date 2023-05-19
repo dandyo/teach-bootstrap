@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bootstrap</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Public+Sans:wght@400;600;700&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-icons/font/bootstrap-icons.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 	<header class="header">
 		<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container-xl">
 				<a class="navbar-brand" href="#">Ecommerce</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
@@ -27,12 +36,24 @@
 							<a class="nav-link" href="#">About</a>
 						</li>
 					</ul>
-					<form>
-						<input type="" name="" placeholder="Search" class="form-control">
+					<form class="search-form">
+						<!-- <input type="" name="" placeholder="Search" class="form-control"> -->
+						<div class="input-group">
+							<span class="input-group-text" id="basic-addon1">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+									class="bi bi-search" viewBox="0 0 16 16">
+									<path
+										d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+									</path>
+								</svg>
+							</span>
+							<input type="text" class="form-control" placeholder="Search"
+								aria-describedby="basic-addon1">
+						</div>
 					</form>
 					<ul class="navbar-nav ms-auto pe-1">
 						<li class="nav-item">
-							<a class="nav-link" href="#">3</a>
+							<a class="nav-link" href="#"><i class="bi bi-bag"></i> 3</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Login</a>
@@ -48,12 +69,8 @@
 			<div class="row">
 				<div class="col-md-6">
 					<h1>Shop</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Revamp your style with the latest designer trends in men’s clothing or achieve a perfectly
+						curated wardrobe thanks to our line-up of timeless pieces.</p>
 				</div>
 			</div>
 		</div>
@@ -74,85 +91,71 @@
 							<a class="nav-link" href="#">Jackets</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link disabled">Hats</a>
+							<a class="nav-link" href="#">Hats</a>
 						</li>
 					</ul>
 				</div>
-				<div class="col-md-6 d-flex justify-content-end">
-					<div class="d-flex align-items-center">
+				<div class="col-md-6 d-flex justify-content-end align-items-end flex-column filter-sort-wrap">
+					<div class="d-flex align-items-center filter-sort">
 						<span class="me-3">Sort By</span>
 						<div class="dropdown">
-							<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
 								Popular
 							</button>
-							<ul class="dropdown-menu">
+							<ul class="dropdown-menu dropdown-menu-end">
 								<li><a class="dropdown-item" href="#">Action</a></li>
 								<li><a class="dropdown-item" href="#">Another action</a></li>
 								<li><a class="dropdown-item" href="#">Something else here</a></li>
 							</ul>
 						</div>
 					</div>
+					<div>Showing 1003 Products</div>
 				</div>
 			</div>
 
 			<div class="row justify-content-center">
 				<div class="col-6 col-md-4 col-lg-3">
 					<div class="product">
-						<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#55595c"></rect>
-							<text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-						</svg>
+						<img src="images/jacket.jpg" alt="Men’s Winter Jacket">
 
 						<div class="d-flex justify-content-between">
-							<h3>Men’s Winter Jacket</h3>
+							<h3>Men's Winter Jacket</h3>
 							<span>M</span>
-						</div>						
+						</div>
 						<p>$99</p>
 					</div>
 				</div>
 				<div class="col-6 col-md-4 col-lg-3">
 					<div class="product">
-						<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#55595c"></rect>
-							<text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-						</svg>
+						<img src="images/jacket.jpg" alt="Men’s Winter Jacket">
 
 						<div class="d-flex justify-content-between">
 							<h3>Men’s Winter Jacket</h3>
 							<span>M</span>
-						</div>						
+						</div>
 						<p>$99</p>
 					</div>
 				</div>
 				<div class="col-6 col-md-4 col-lg-3">
 					<div class="product">
-						<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#55595c"></rect>
-							<text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-						</svg>
+						<img src="images/jacket.jpg" alt="Men’s Winter Jacket">
 
 						<div class="d-flex justify-content-between">
 							<h3>Men’s Winter Jacket</h3>
 							<span>M</span>
-						</div>						
+						</div>
 						<p>$99</p>
 					</div>
 				</div>
 				<div class="col-6 col-md-4 col-lg-3">
 					<div class="product">
-						<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-							<title>Placeholder</title>
-							<rect width="100%" height="100%" fill="#55595c"></rect>
-							<text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-						</svg>
+						<img src="images/jacket.jpg" alt="Men’s Winter Jacket">
 
 						<div class="d-flex justify-content-between">
 							<h3>Men’s Winter Jacket</h3>
 							<span>M</span>
-						</div>						
+						</div>
 						<p>$99</p>
 					</div>
 				</div>
@@ -162,4 +165,5 @@
 
 	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

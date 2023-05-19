@@ -1,24 +1,113 @@
+$black: #000;
+
+body {
+	font-family: 'Public Sans', serif;
+	font-size: 17px;
+}
+
+img {
+	max-width: 100%;
+}
+
 .header {
 	background-color: #000;
 	color: #fff;
+	border-bottom: 1px solid #979797;
+	font-size: 17px;
+	font-family: 'Inter', serif;
+
+	.search-form {
+		color: #fff;
+
+		.input-group-text {
+			color: #fff;
+			background-color: transparent;
+			border: 0 none;
+		}
+
+		.form-control {
+			background-color: transparent;
+			border: 0 none;
+			padding-left: 0;
+
+			&::placeholder {
+				color: #979797;
+			}
+		}
+	}
 }
+
+.navbar-brand {
+	font-weight: bold;
+}
+
 .navbar {
 	background-color: transparent;
 	color: #fff;
-}
-.nav-link {
-	
+
+	.navbar-nav {
+		.nav-link {
+			padding-left: 17px;
+			padding-right: 17px;
+			color: #fff;
+		}
+	}
 }
 
 .banner {
 	background-color: #000;
 	color: #fff;
-	padding: 30px 0;
+	padding: 47px 0;
 }
 
 .nav-filter {
+	.nav-item {
+		margin-right: 9px;
+	}
+
 	.nav-link {
 		border: 1px solid #000;
 		border-radius: 0;
+		background-color: #fff;
+		color: #000;
+
+		&.active,
+		&:hover {
+			background-color: $black;
+			color: #fff;
+		}
+
+	}
+}
+
+.filter-sort-wrap {
+	font-size: 13px;
+
+	.filter-sort {
+		border: 1px solid $black;
+		padding-left: 12px;
+		margin-bottom: 14px;
+
+		span {
+			opacity: 0.5;
+		}
+
+		.btn {
+			background-color: transparent;
+			border-radius: 0;
+			font-size: 14px;
+			border: 0 none;
+		}
+	}
+}
+
+.product {
+	img {
+		margin-bottom: 12px;
+	}
+
+	h3 {
+		font-size: 17px;
+		font-weight: bold;
 	}
 }
