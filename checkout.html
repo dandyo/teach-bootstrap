@@ -78,87 +78,58 @@
 
 	<section class="py-5">
 		<div class="container-xl">
-			<div class="row mb-5">
+			<div class="row">
 				<div class="col-md-6">
-					<ul class="nav nav-pills nav-fill nav-filter">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Sweaters</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Tops</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Jackets</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Hats</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-6 d-flex justify-content-end align-items-end flex-column filter-sort-wrap">
-					<div class="d-flex align-items-center filter-sort">
-						<span class="me-3">Sort By</span>
-						<div class="dropdown">
-							<button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-								aria-expanded="false">
-								Popular
-							</button>
-							<ul class="dropdown-menu dropdown-menu-end">
-								<li><a class="dropdown-item" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
-								<li><a class="dropdown-item" href="#">Something else here</a></li>
-							</ul>
+					<form>
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<input type="text" class="form-control" placeholder="First name">
+							</div>
+							<div class="col-md-6 mb-3">
+								<input type="text" class="form-control" placeholder="Last name">
+							</div>
 						</div>
-					</div>
-					<div>Showing 1003 Products</div>
-				</div>
-			</div>
-
-			<div class="row justify-content-center">
-				<div class="col-6 col-md-4 col-lg-3">
-					<a class="product" href="product.html">
-						<img src="images/jacket.jpg" alt="Men’s Winter Jacket">
-
-						<div class="d-flex justify-content-between">
-							<h3>Men's Winter Jacket</h3>
-							<span>M</span>
+						<div class="mb-3">
+							<input type="text" class="form-control" placeholder="Address">
 						</div>
-						<p>$99</p>
-					</a>
-				</div>
-				<div class="col-6 col-md-4 col-lg-3">
-					<a class="product" href="product.html">
-						<img src="images/jacket.jpg" alt="Men’s Winter Jacket">
-
-						<div class="d-flex justify-content-between">
-							<h3>Men’s Winter Jacket</h3>
-							<span>M</span>
+						<div class="mb-3">
+							<input type="text" class="form-control" placeholder="Apartment Suite">
 						</div>
-						<p>$99</p>
-					</a>
-				</div>
-				<div class="col-6 col-md-4 col-lg-3">
-					<a class="product">
-						<img src="images/jacket.jpg" alt="Men’s Winter Jacket">
-
-						<div class="d-flex justify-content-between">
-							<h3>Men’s Winter Jacket</h3>
-							<span>M</span>
+						<div class="mb-3">
+							<input type="text" class="form-control" placeholder="City">
 						</div>
-						<p>$99</p>
-					</div>
-				</div>
-				<div class="col-6 col-md-4 col-lg-3">
-					<div class="product">
-						<img src="images/jacket.jpg" alt="Men’s Winter Jacket">
-
-						<div class="d-flex justify-content-between">
-							<h3>Men’s Winter Jacket</h3>
-							<span>M</span>
+						<div class="row">
+							<div class="col-md-4 mb-3">
+								<select class="form-control">
+									<option value="">Country</option>
+									<option value="Philippines">Philippines</option>
+									<option value="China">China</option>
+								</select>
+							</div>
+							<div class="col-md-4 mb-3">
+								<select class="form-control">
+									<option value="">City</option>
+									<option value="Philippines">Philippines</option>
+									<option value="China">China</option>
+								</select>
+							</div>
+							<div class="col-md-4 mb-3">
+								<input type="text" name="" class="form-control" placeholder="Zipcode">
+							</div>
 						</div>
-						<p>$99</p>
-					</div>
+						<div class="mb-3">
+							<input type="text" name="" class="form-control" placeholder="Optional">
+						</div>
+						<div class="form-check mb-4">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Save contact information
+							</label>
+						</div>
+						<input type="submit" value="Continue shipping" class="btn btn-black w-100">
+					</form>
 				</div>
+				<div class="col-md-6"></div>
 			</div>
 		</div>
 	</section>

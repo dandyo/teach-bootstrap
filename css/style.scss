@@ -1,7 +1,7 @@
 $black: #000;
 
 body {
-	font-family: 'Public Sans', serif;
+	font-family: 'Public Sans', sans-serif;
 	font-size: 17px;
 }
 
@@ -14,7 +14,7 @@ img {
 	color: #fff;
 	border-bottom: 1px solid #979797;
 	font-size: 17px;
-	font-family: 'Inter', serif;
+	font-family: 'Inter', sans-serif;
 
 	.search-form {
 		color: #fff;
@@ -101,6 +101,12 @@ img {
 	}
 }
 
+.btn {
+	border-radius: 0;
+}
+.form-control {
+	border-radius: 0;
+}
 .product {
 	img {
 		margin-bottom: 12px;
@@ -111,3 +117,13 @@ img {
 		font-weight: bold;
 	}
 }
+
+.btn-black {
+	background-color: #000;
+	color: #fff;
+}
+
+select.form-control {
+	appearance: auto;
+}
+
