@@ -47,7 +47,7 @@
 					</form>
 					<ul class="navbar-nav ms-auto pe-1">
 						<li class="nav-item">
-							<a class="nav-link" href="#"><i class="bi bi-bag"></i> 3</a>
+							<a class="nav-link" href="cart.html"><i class="bi bi-bag"></i> 3</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Login</a>
@@ -60,14 +60,17 @@
 
 	<section class="py-5">
 		<div class="container-xl">
-			<div class="row">
-				<div class="col-md-6">
+			<div class="row justify-content-between">
+				<div class="col-md-5">
 					<h1 class="h3">Checkout</h1>
-					<div class="d-flex justify-content-between mb-4">
-						<div class="">Address</div>
+					<div class="checkout-breadcrumb mb-4">
+						<div class="active">Address</div>
+						<span></span>
 						<div class="">Shipping</div>
+						<span></span>
 						<div class="">Payment</div>
 					</div>
+					<h5 class="mb-4">Shipping Information</h5>
 					<form>
 						<div class="row">
 							<div class="col-md-6 mb-3">
@@ -117,8 +120,56 @@
 						<input type="submit" value="Continue shipping" class="btn btn-black w-100">
 					</form>
 				</div>
-				<div class="col-md-6">
-					
+				<div class="col-md-5 px-lg-5">
+					<p class="pt-5">Your Cart</p>
+					<div class="cart-list">
+						<div class="cart-item">
+							<img src="images/jacket.jpg">
+							<div class="cart-item-details">
+								<h4>Men’s winter jacket</h4>
+								<p>Size: L</p>
+								<p>Quantity: 1</p>
+
+								<div class="d-flex justify-content-between">
+									<h5>$99</h5>
+									<a href="">Remove</a>
+								</div>
+							</div>
+						</div>
+						<div class="cart-item">
+							<img src="images/jacket.jpg">
+							<div class="cart-item-details">
+								<h4>Men’s winter jacket</h4>
+								<p>Size: L</p>
+								<p>Quantity: 1</p>
+
+								<div class="d-flex justify-content-between">
+									<h5>$99</h5>
+									<a href="">Remove</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="order-summary">					
+						<form class="mb-3">
+							<input type="text" name="" class="form-control" placeholder="Enter coupon code here">
+						</form>
+
+						<p class="d-flex justify-content-between">
+							<span>Subtotal</span>
+							<span>$200</span>
+						</p>
+						<p class="d-flex justify-content-between">
+							<span>Shipping</span>
+							<span>Calculated at the next step</span>
+						</p>
+						<hr>
+						<p class="d-flex justify-content-between">
+							<span>Total</span>
+							<span>$200</span>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
