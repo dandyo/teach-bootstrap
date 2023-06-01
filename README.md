@@ -1,5 +1,11 @@
 # teach-bootstrap
 
+**Preview**   
+https://dandyo.github.io/teach-bootstrap/index.html
+
+**Bootstrap Website**   
+https://getbootstrap.com/
+
 **Design on Figma:**   
 https://bit.ly/bootstrap1234
 
@@ -7,6 +13,7 @@ https://bit.ly/bootstrap1234
 https://www.youtube.com/watch?v=O_9u1P5YjVc&list=PL4cUxeGkcC9joIM91nLzd_qaH_AimmdAR
 
 **Sass command for css:**   
+*node is required in order to run this command.*   
 *run this command in terminal/command prompt under the css folder*
 ```
 sass --watch style.scss:style.css
